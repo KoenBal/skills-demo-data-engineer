@@ -1,0 +1,7 @@
+_archive/
+_data/
+# __pycache__/
+desktop.ini
+
+# ignore files of jupyter notebooks
+.ipynb_checkpoints/
