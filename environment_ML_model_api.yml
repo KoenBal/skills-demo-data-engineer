@@ -1,0 +1,23 @@
+name: skills-demo
+# This file may be used to create an environment using:
+# $ conda env create --name <env> --file <this file>
+# This file can be created using:
+# $ conda env export > environment.yml
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  # minconda docker image already has python 3.5
+  - python=3.7.5
+  - pip
+  
+  # data packages
+  - lightgbm
+
+  # other packages
+  - requests
+  - flask
+  - joblib
+  
+  - pip:
+    - flask-restful
