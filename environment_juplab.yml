@@ -1,0 +1,37 @@
+name: demo
+# This file may be used to create an environment using:
+# $ conda env create --name <env> --file <this file>
+# This file can be created using:
+# $ conda env export > environment.yml
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.7.5
+  - pip
+  
+  # data packages
+  - pandas
+  - geopandas
+  - scikit-learn
+  - lightgbm
+
+  # viz packages
+  - altair
+
+  # other packages
+  - requests
+  - flask
+  - joblib
+
+  # Jupyter lab and jupyter lab extensions
+  - jupyterlab
+  - black
+  - jupyterlab_code_formatter
+  
+  - pip:
+    - flask-restful
+    - folium
+    
+# can be left out    
+# prefix: C:\Users\koen_\Miniconda3\envs\colruyt
