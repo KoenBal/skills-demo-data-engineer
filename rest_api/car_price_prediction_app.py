@@ -1,5 +1,5 @@
 from flask import Flask, jsonify, request
-from flask_restful import Api, Resource
+from flask_restplus import Api, Resource
 import joblib
 
 app = Flask(__name__)
