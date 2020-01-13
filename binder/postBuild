@@ -1,0 +1,20 @@
+#!/bin/bash
+# Run code after installing the environment
+
+# should extension manager be enabled?
+
+## INSTALL JUPYTER LAB EXTENSIONS
+conda install -y -c conda-forge jupyterlab_code_formatter black nb_conda_kernels
+jupyter labextension install @ryantam626/jupyterlab_code_formatter --no-build
+jupyter labextension install @jupyterlab/toc --no-build
+jupyter labextension install @aquirdturtle/collapsible_headings --no-build
+
+## BUILD
+jupyter lab build # avoid doing this for each package using --no-build flag above
+
+
+## IMPORT WORKSPACE
+jupyter lab workspaces import binder/workspace.json
+
+# Add a settings file? - ~/.jupyter/lab/user-settings
+# https://github.com/ian-r-rose/binder-workspace-demo

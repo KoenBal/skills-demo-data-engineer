@@ -1,0 +1,4 @@
+#!/bin/bash
+# Run code before the user sessions starts
+
+exec "$@"

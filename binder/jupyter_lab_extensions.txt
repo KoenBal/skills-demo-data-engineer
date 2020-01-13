@@ -1,0 +1,22 @@
+# commands
+jupyter labextension --help
+jupyter labextension list
+jupyter nbextension list
+jupyter serverextension list
+jupyter bundlerextension list
+jupyter lab workspaces export > binder/workspace.json
+
+
+# packages can be found on https://www.npmjs.com/search?q=keywords:jupyterlab-extension
+# or the puzzle tab in the jupyter lab interface
+# or best just google for best packages
+
+
+# install a package
+jupyter labextension install @ryantam626/jupyterlab_code_formatter --no-build
+conda install -c conda-forge jupyterlab_code_formatter
+jupyter serverextension enable --py jupyterlab_code_formatter
+jupyter lab build # should not be done for each package
+
+jupyter labextension enable my-extension
+jupyter labextension disable my-extension # This will prevent the extension from loading in the browser, but does not require a rebuild.

@@ -1,0 +1,33 @@
+name: skills-demo
+# This file may be used to create an environment using:
+# $ conda env create --name <env> --file <this file>
+# This file can be created using:
+# $ conda env export > environment.yml
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.7
+  - pip
+  - ipykernel
+    
+  # data packages
+  - gdal=<2.5  #to avoid ImportError: libpoppler.so.76
+  - geopandas
+  - scikit-learn
+  - lightgbm
+
+  # viz packages
+  - altair
+
+  # other packages
+  - requests
+  - flask
+  - joblib
+  
+  - pip:
+    - flask-restplus
+    - folium
+    
+# can be left commented out    
+# prefix: C:\Users\koen_\Miniconda3\envs\colruyt
