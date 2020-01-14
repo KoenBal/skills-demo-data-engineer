@@ -10,7 +10,7 @@ jupyter labextension install @jupyterlab/toc --no-build
 jupyter labextension install @aquirdturtle/collapsible_headings --no-build
 
 ## BUILD
-jupyter lab build # avoid doing this for each package using --no-build flag above
+jupyter lab clean && jupyter lab build --dev-build=False
 
 
 ## IMPORT WORKSPACE
@@ -18,3 +18,13 @@ jupyter lab workspaces import binder/workspace.json
 
 # Add a settings file? - ~/.jupyter/lab/user-settings
 # https://github.com/ian-r-rose/binder-workspace-demo
+
+# see https://github.com/jupyterlab/jupyterlab-demo for more ideas
+
+## DOWNLOAD DATA
+
+sudo apt install unzip
+curl --output shapefiles.zip https://ac.ngi.be/remoteclient-open/SDI/NGI-IGN/fb1e2993-2020-428c-9188-eb5f75e284b9_x-shapefile_31370.zip
+mkdir _data
+unzip shapefiles.zip -d _data
+rm shapefile.zip
