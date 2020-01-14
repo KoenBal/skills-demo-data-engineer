@@ -27,4 +27,4 @@ sudo apt install unzip
 curl --output shapefiles.zip https://ac.ngi.be/remoteclient-open/SDI/NGI-IGN/fb1e2993-2020-428c-9188-eb5f75e284b9_x-shapefile_31370.zip
 mkdir _data
 unzip shapefiles.zip -d _data
-rm shapefile.zip
+rm shapefiles.zip
