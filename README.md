@@ -6,7 +6,19 @@ binder link for the badge:
 https://mybinder.org/v2/gh/koenbal/skills-demo/master?urlpath=lab/tree/data_engineer_exercise_solution.ipynb 
 -->
 
-Demo files of various skills a data/dev-ops engineer should possess.  
-You can open the repo as an interactive environment using binder.
+Demo of various skills a data/back-end/dev-ops engineer should possess.
+
+Demonstrated skills:
+- setup a data-science environment/jupyter lab
+- build, document and deploy a ML model REST api on AWS using Elastic Beanstalk, docker, cloudflare DNS
+- setup an interactive demo environment using binder 
+- extract data using requests, curl
+- test data and code using unittest
+- wrangle data using pandas, geopandas and numpy 
+- visualize data using folium interactive maps
+- write pep8 compliant Python code
+- write documentation
+- code versioning using git and github
+
 
 <!-- Info about bidner usage archive.analytics.mybinder.org -->
